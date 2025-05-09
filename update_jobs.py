@@ -11,12 +11,10 @@ html_content = """
 <head>
   <title>개발자 취업 달력</title>
   <style>
-    body { font-family: Arial, sans-serif; background-color: #f4f4f9; padding: 20px; }
+    body { font-family: Arial, sans-serif; background: #f4f4f9; padding: 20px; }
     h1 { text-align: center; color: #333; }
     .job-list { max-width: 600px; margin: 0 auto; }
     .job-card { background: #fff; padding: 15px; margin: 10px 0; border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); }
-    .job-card h2 { margin: 0; font-size: 1.2em; }
-    .job-card p { margin: 5px 0; }
   </style>
 </head>
 <body>
@@ -40,6 +38,6 @@ for job in jobs:
 
 html_content += "</div></body></html>"
 
-# HTML 파일 업데이트
+# HTML 파일 생성
 with open("index.html", "w", encoding="utf-8") as file:
     file.write(html_content)
